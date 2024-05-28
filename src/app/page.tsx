@@ -22,9 +22,13 @@ export default function Home() {
           </span>
         </h1>
         <h1 className="pt-4">
-          Esse website é um projeto pessoal onde estarei compartilhando meus
-          projetos pessoais e eventualmente escreverei alguns artigos
-          educacionais para ajudar a comunidade.
+          Esse website é um{" "}
+          <span className="line-through font-semibold text-base">
+            marketing escancarado{" "}
+          </span>
+          <span className="font-semibold">projeto pessoal</span> onde estarei
+          compartilhando meus projetos pessoais e eventualmente escreverei
+          alguns artigos educacionais para ajudar a comunidade.
         </h1>
 
         <h1 className="pt-4">
