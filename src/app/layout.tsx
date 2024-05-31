@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-gradient-to-b from-[#0e1111] to-[#0e1111]`}
+      >
         <Navbar />
         {children}
       </body>

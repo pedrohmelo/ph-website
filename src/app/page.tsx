@@ -2,20 +2,25 @@ import Image from "next/image";
 import { Button } from "../components/ui/button";
 
 import Myself from "@/public/images/eu.jpg";
+import MeLeft from "@/public/images/eu-esquerda.png";
+import MeRight from "@/public/images/eu-direita.png";
 
 export default function Home() {
   return (
-    <main className="h-screen px-4 pt-20 bg-gradient-to-b from-gray-700 to-gray-300">
-      <Image
-        src={Myself}
-        alt="Pedro Melo Picture"
-        className="rounded-2xl w-full h-80 object-cover"
-      />
+    <main className="h-screen px-4 pt-20">
+      <div className="flex items-center justify-center bg-pink-100">
+        <Image
+          src={Myself}
+          alt="Pedro Melo Picture"
+          className="rounded-2xl h-40 w-40 object-cover"
+        />
+      </div>
 
-      <div className="py-4">
+      <div className="py-4 text-[#e5e5e5]">
         <h1 className="text-lg">
           Olá! Me chamo{" "}
-          <span className="font-semibold text-xl">Pedro Melo</span>, sou um
+          <span className="font-semibold text-xl text-red-200">Pedro Melo</span>
+          , sou um
           <span className="font-semibold text-lg underline">
             {" "}
             desenvolvedor frontend.

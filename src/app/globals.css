@@ -4,11 +4,7 @@
 
 @layer base {
   :root {
-    --background: linear-gradient(
-      to bottom,
-      #000000,
-      #333333
-    ); /* Example gradient */
+    --background: linear-gradient(to bottom, #000000, #000000);
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -40,11 +36,7 @@
   }
 
   .dark {
-    --background: linear-gradient(
-      to bottom,
-      #333333,
-      #000000
-    ); /* Example gradient */
+    --background: linear-gradient(to bottom, #000000, #000000);
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
