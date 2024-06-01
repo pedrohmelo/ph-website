@@ -15,7 +15,7 @@ const MobileMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Menu />
+        <Menu color="white" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>Telas</DropdownMenuLabel>
