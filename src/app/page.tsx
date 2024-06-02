@@ -60,26 +60,3 @@ export default function Home() {
     </main>
   );
 }
-
-{
-  /* <div className="w-full flex items-center justify-center bg-[#D9D9D9]">
-<div
-  className="flex flex-col items-center p-2 "
-  style={{
-    backgroundImage: `url(${teste1.src})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-  }}
->
-  <div className="text-xl ">
-    <span>&lt;</span>
-    desenvolvedor
-  </div>
-  <div className={`${caveat.className} font-semibold text-3xl `}>
-    frontend/<span>&gt;</span>
-  </div>
-</div>
-<Image src={Me} alt="pedromelo's face" className="w-44 object-cover" />
-</div> */
-}
