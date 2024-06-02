@@ -25,7 +25,7 @@ export default function Home() {
         <Image src={Me} alt="pedromelo's face" className="w-44 object-cover" />
       </div>
 
-      <div className="px-4 pt-12">
+      <div className="px-4 pt-12 text-center">
         <h1 className="text-white text-lg">
           <span className="text-2xl">Olá!</span> Me chamo Pedro Melo, sou um
           <span className="font-semibold text-xl"> desenvolvedor frontend</span>
