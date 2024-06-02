@@ -1,4 +1,7 @@
 "use client";
+import Image from "next/image";
+import Woof from "@/public/images/woof.jpg";
+import { Home, StickyNote, UserRound, FileTerminal } from "lucide-react";
 
 import { Menu } from "lucide-react";
 import {
@@ -21,16 +24,28 @@ const MobileMenu = () => {
         <DropdownMenuLabel>Telas</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem>
-          <Link href="/">Home</Link>
+          <Link href="/" className="flex items-center gap-x-2">
+            <Home size={18} />
+            Home
+          </Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem>
-          <Link href="/posts">Posts</Link>
+          <Link href="/posts" className="flex items-center gap-x-2">
+            <StickyNote size={18} />
+            Posts
+          </Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem>
-          <Link href="/about">Sobre mim</Link>
+          <Link href="/about" className="flex items-center gap-x-2">
+            <UserRound size={18} />
+            Sobre mim
+          </Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem>
-          <Link href="/projects">Projetos</Link>
+          <Link href="/projects" className="flex items-center gap-x-2">
+            <FileTerminal size={18} />
+            Projetos
+          </Link>
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
