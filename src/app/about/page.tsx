@@ -18,10 +18,6 @@ const About = () => {
         Me chamo Pedro Melo, possuo bacharelado em Ciência da Computação pela
         Universidade Estadual de Maringá (UEM), obtido em 2023. <br /> <br /> Ao
         longo do tempo trabalhei com as seguintes tecnologias:
-        <div className="flex items-center">
-          <Image src={PLSQL} alt="PLSQL" />
-          PLSQL
-        </div>
         <TechsCarousel />
       </div>
     </main>
