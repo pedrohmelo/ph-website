@@ -5,7 +5,7 @@ import MobileMenu from "@/src/components/navbar/mobile-dropdown";
 
 const Navbar = () => {
   return (
-    <main className="flex fixed items-center justify-between px-4 py-4 w-full">
+    <main className="flex fixed items-center justify-between px-4 py-4 w-full ">
       <div className="text-white text-2xl font-medium">
         <span>&lt;/&gt;</span>
       </div>

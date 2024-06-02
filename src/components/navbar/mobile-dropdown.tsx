@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Woof from "@/public/images/woof.jpg";
-import { Home, StickyNote, UserRound, FileTerminal } from "lucide-react";
+import { Home, Newspaper, UserRound, FileTerminal } from "lucide-react";
 
 import { Menu } from "lucide-react";
 import {
@@ -31,7 +31,7 @@ const MobileMenu = () => {
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem>
           <Link href="/posts" className="flex items-center gap-x-2">
-            <StickyNote size={18} />
+            <Newspaper size={18} />
             Posts
           </Link>
         </DropdownMenuCheckboxItem>

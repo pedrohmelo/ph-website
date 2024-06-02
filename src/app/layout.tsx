@@ -3,6 +3,7 @@ import { Saira } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/footer";
 
 const saira = Saira({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

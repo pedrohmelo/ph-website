@@ -6,20 +6,27 @@ import Myself from "@/public/images/eu.jpg";
 import MeLeft from "@/public/images/eu-esquerda.png";
 import MeRight from "@/public/images/eu-direita.png";
 import Me from "@/public/images/meBGremoved.png";
+import Brush from "@/public/images/brush.png";
+import teste1 from "@/public/images/Pedroca.png";
 
 const caveat = Caveat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="h-screen  pt-20">
+    <main className="pt-16">
       <div className="w-full flex items-center justify-center bg-[#D9D9D9]">
-        <div className="flex flex-col items-center bg-[#D9414E] p-2 rounded-lg">
-          <div className="text-xl ">
-            <span>&lt;</span>
-            desenvolvedor
-          </div>
-          <div className={`${caveat.className} font-semibold text-3xl `}>
-            frontend/<span>&gt;</span>
+        <div className="relative flex flex-col items-center p-2 w-60">
+          <Image src={teste1} alt="1fasd" className="z-10  w-72 absolute" />
+          <div className="flex flex-col items-center relative ">
+            <h1 className="text-2xl relative z-20 font-semibold ">
+              <span>&lt;</span>
+              desenvolvedor
+            </h1>
+            <h1
+              className={`${caveat.className} relative font-semibold text-4xl z-20 `}
+            >
+              frontend/<span>&gt;</span>
+            </h1>
           </div>
         </div>
         <Image src={Me} alt="pedromelo's face" className="w-44 object-cover" />
@@ -41,25 +48,38 @@ export default function Home() {
         </h1>
       </div>
 
-      {/* <div className="flex items-center justify-center">
-        <Button className="w-52">Entre em contato</Button>
-      </div> */}
+      <div className="flex items-center justify-center pt-10 px-8 ">
+        <h1 className="text-white">
+          Caso precise de um desenvolvedor para tornar sua ideia realidade, pode
+          entrar em contato comigo!
+        </h1>
+        <Button className="w-52" variant="contact">
+          Entre em contato
+        </Button>
+      </div>
     </main>
   );
 }
 
 {
-  /* <div className="relative w-full flex items-center justify-center h-80 rounded-full bg-white">
-<div className="absolute bg-pink-200 left-2">
-  <span>&lt;</span>
-  desenvolvedor/
-  <span>&gt;</span>
+  /* <div className="w-full flex items-center justify-center bg-[#D9D9D9]">
+<div
+  className="flex flex-col items-center p-2 "
+  style={{
+    backgroundImage: `url(${teste1.src})`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  }}
+>
+  <div className="text-xl ">
+    <span>&lt;</span>
+    desenvolvedor
+  </div>
+  <div className={`${caveat.className} font-semibold text-3xl `}>
+    frontend/<span>&gt;</span>
+  </div>
 </div>
-<Image
-  src={Me}
-  alt="pedromelo's face"
-  className="absolute w-60 object-cover right-20"
-/>
-<div className="absolute bg-blue-200 right-4">frontend</div>
+<Image src={Me} alt="pedromelo's face" className="w-44 object-cover" />
 </div> */
 }
