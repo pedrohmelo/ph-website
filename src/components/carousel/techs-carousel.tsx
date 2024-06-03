@@ -18,12 +18,15 @@ import PLSQL from "@/public/svgs/icons8-oracle-pl-sql.svg";
 import NextJS from "@/public/svgs/icons8-nextjs.svg";
 import ReactJS from "@/public/svgs/icons8-react.svg";
 import Typescript from "@/public/svgs/icons8-typescript.svg";
+import Javascript from "@/public/svgs/icons8-javascript.svg";
+import Tailwind from "@/public/svgs/icons8-tailwind-css.svg";
 
 const techsLibrary = [
   { src: Typescript, alt: "Typescript icon", name: "Typescript" },
+  { src: Javascript, alt: "Javascript icon", name: "Javascript" },
   { src: NextJS, alt: "NextJS icon", name: "NextJS" },
   { src: ReactJS, alt: "ReactJS icon", name: "ReactJS" },
-  { src: PLSQL, alt: "PLSQL icon", name: "PLSQL" },
+  { src: Tailwind, alt: "Tailwind icon", name: "Tailwind" },
   { src: PLSQL, alt: "PLSQL icon", name: "PLSQL" },
 ];
 
