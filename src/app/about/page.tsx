@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import { TechsCarousel } from "@/src/components/carousel/techs-carousel";
 import myselfGraduated from "@/public/images/meGraduated.jpg";
-import PLSQL from "@/public/svgs/icons8-oracle-pl-sql.svg";
 
 const About = () => {
   return (
