@@ -10,6 +10,11 @@ const maskPost = () => {
       </h1>
 
       <div className="pt-4">image here</div>
+
+      <h1>
+        Para a construção do algoritmo, sugiro os seguintes passos: 1 - Crie uma
+        função
+      </h1>
     </main>
   );
 };
