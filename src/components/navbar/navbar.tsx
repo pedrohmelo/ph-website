@@ -1,15 +1,11 @@
-import Image from "next/image";
-
-import WolfLogo from "@/public/images/woof.jpg";
 import MobileMenu from "@/src/components/navbar/mobile-dropdown";
 
 const Navbar = () => {
   return (
-    <main className="flex fixed items-center justify-between px-4 py-4 w-full ">
-      <div className="text-white text-2xl font-medium">
+    <main className="flex fixed items-center justify-between px-4 md:px-16 py-4 w-full ">
+      <div className="text-white text-2xl md:text-3xl font-medium">
         <span>&lt;/&gt;</span>
       </div>
-      <Image src={WolfLogo} alt="logo" className="w-12 hidden" />
       <div className="lg:hidden">
         <MobileMenu />
       </div>

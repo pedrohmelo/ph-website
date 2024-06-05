@@ -18,7 +18,7 @@ const MobileMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Menu color="white" />
+        <Menu color="white" size={28} />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>Telas</DropdownMenuLabel>
