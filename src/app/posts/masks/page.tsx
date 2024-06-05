@@ -12,8 +12,10 @@ const maskPost = () => {
       <div className="pt-4">image here</div>
 
       <h1>
-        Para a construção do algoritmo, sugiro os seguintes passos: 1 - Crie uma
-        função
+        Para a construção do algoritmo, sugiro os seguintes passos: 1 - Crie a
+        função que receberá os dados do input e fará a chamada da função de
+        máscara desejada. 2 - Crie a função de máscara. 3 - Crie uma tipagem
+        para as máscaras. 4 -
       </h1>
     </main>
   );
