@@ -2,7 +2,7 @@ import { Input } from "@/src/components/ui/input";
 
 const maskPost = () => {
   return (
-    <main className="text-white pt-20 px-4">
+    <main className="text-white pt-20 px-4 md:px-16">
       <h1 className="text-5xl font-medium">Máscaras</h1>
       <h1 className="pt-2">
         Como o uso de máscaras nos inputs tende a possuir uma implementação

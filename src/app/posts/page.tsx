@@ -1,10 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
 import { VenetianMask } from "lucide-react";
 
 const Posts = () => {
   return (
-    <main className="h-screen pt-20 px-4">
+    <main className="pt-20 px-4 md:px-16">
+      <h1 className="text-white text-2xl md:text-3xl pb-6 font-medium">
+        Posts
+      </h1>
       <Link
         href="/posts/masks"
         className="text-white border border-red-300 flex flex-col px-4 py-2 rounded-sm"

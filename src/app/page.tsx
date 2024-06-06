@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../components/ui/button";
+import ButtonShiny from "../components/ui/button-shiny";
 import { Caveat } from "next/font/google";
 
 import Myself from "@/public/images/eu.jpg";
@@ -40,7 +41,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="px-4 md:px-16 pt-12 text-center md:text-start">
+      <div className="px-4 md:px-16 pt-12 md:text-start">
         <h1 className="text-white text-lg md:text-2xl">
           <span className="text-2xl md:text-4xl">Olá!</span> Me chamo Pedro
           Melo, sou um
@@ -48,24 +49,25 @@ export default function Home() {
             {" "}
             desenvolvedor frontend
           </span>
-          . <br />
+          .
           <br />
-          Estarei escrevendo alguns artigos educativos por aqui, com intuito de
-          ajudar a comunidade de desenvolvimento.
+          <br />
+          Estarei escrevendo alguns artigos por aqui, com intuito de repassar
+          meu conhecimento.
           <br />
           <br />
           Você também encontrará alguns projetos pessoais e profissionais meus
-          por aqui, disponibilizarei o código de toda a aplicação dos projetos
-          pessoais.
+          por aqui.
         </h1>
       </div>
 
-      <div className="flex items-center justify-center pt-10 px-8 md:px-20 md:gap-x-2">
-        <h1 className="text-white md:text-2xl">
+      <div className="flex flex-col md:flex-row items-center justify-center pt-10 px-4 md:px-16 md:gap-x-10">
+        <h1 className="text-white md:text-2xl pb-4">
           Caso precise de um desenvolvedor para tornar sua ideia realidade, pode
           entrar em contato comigo!
         </h1>
-        <Button className="w-52 md:text-xl" variant="contact">
+        {/* <ButtonShiny /> */}
+        <Button className="w-full h-10 text-xl" variant="contact">
           Entre em contato
         </Button>
       </div>
