@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
 
       <div className="hidden lg:flex">
-        <ul className="flex gap-x-2 font-semibold">
+        <ul className="flex gap-x-4 font-medium text-xl text-neutral-200">
           <li>
             <a href="/">Home</a>
           </li>
