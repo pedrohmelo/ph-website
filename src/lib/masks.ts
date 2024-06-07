@@ -1,4 +1,4 @@
-export const maskCPF = (cpf: string) => {
+export function maskCPF(cpf: string) {
   const numbersOnly = cpf.replace(/\D/g, "");
 
   if (numbersOnly.length <= 3) {
@@ -9,11 +9,11 @@ export const maskCPF = (cpf: string) => {
     return `${numbersOnly.slice(0, 3)}.${numbersOnly.slice(
       3,
       6
-    )}.${numbersOnly.slice(6)}}`;
+    )}.${numbersOnly.slice(6)}`;
   } else {
     return `${numbersOnly.slice(0, 3)}.${numbersOnly.slice(
       3,
       6
     )}.${numbersOnly.slice(6, 9)}-${numbersOnly.slice(9, 11)}`;
   }
-};
+}

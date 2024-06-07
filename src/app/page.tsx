@@ -41,10 +41,12 @@ export default function Home() {
         />
       </div>
 
-      <div className="px-4 md:px-16 pt-12 md:text-start">
-        <h1 className="text-white text-lg md:text-2xl">
-          <span className="text-2xl md:text-4xl">Olá!</span> Me chamo Pedro
-          Melo, sou um
+      <div className="px-4 md:px-16 lg:px-24 pt-12 md:text-start">
+        <h1 className="text-neutral-200 text-lg md:text-2xl">
+          <span className="text-2xl md:text-4xl lg:text-5xl tracking-wider">
+            Olá!
+          </span>{" "}
+          Me chamo Pedro Melo, sou um
           <span className="font-semibold text-xl md:text-2xl">
             {" "}
             desenvolvedor frontend
@@ -61,8 +63,8 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center pt-10 px-4 md:px-16 md:gap-x-10">
-        <h1 className="text-white md:text-2xl pb-4">
+      <div className="flex flex-col md:flex-row items-center justify-center pt-10 px-4 md:px-16 lg:px-24 md:gap-x-10">
+        <h1 className="text-neutral-200 md:text-2xl pb-4">
           Caso precise de um desenvolvedor para tornar sua ideia realidade, pode
           entrar em contato comigo!
         </h1>
@@ -71,6 +73,8 @@ export default function Home() {
           Entre em contato
         </Button>
       </div>
+
+      <div className="text-white">fon</div>
     </main>
   );
 }

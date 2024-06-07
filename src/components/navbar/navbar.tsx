@@ -2,8 +2,8 @@ import MobileMenu from "@/src/components/navbar/mobile-dropdown";
 
 const Navbar = () => {
   return (
-    <main className="flex fixed items-center justify-between px-4 md:px-16 py-4 w-full bg-[#0e1111]">
-      <div className="text-white text-2xl md:text-3xl font-medium">
+    <main className="flex fixed items-center justify-between px-4 md:px-16 lg:px-24 py-4 w-full bg-[#0e1111]">
+      <div className="text-neutral-200 text-2xl md:text-3xl font-medium">
         <span>&lt;/&gt;</span>
       </div>
       <div className="lg:hidden">
