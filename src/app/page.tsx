@@ -15,7 +15,7 @@ const caveat = Caveat({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="pt-16">
-      <div className="w-full flex items-center justify-center bg-[#D9D9D9]">
+      {/* <div className="w-full flex items-center justify-center bg-[#D9D9D9]">
         <div className="relative flex flex-col items-center p-2 w-60 md:w-96">
           <Image
             src={teste1}
@@ -39,10 +39,10 @@ export default function Home() {
           alt="pedromelo's face"
           className="w-44 md:w-60 object-cover"
         />
-      </div>
+      </div> */}
 
       <div className="px-4 md:px-16 lg:px-24 pt-12 md:text-start">
-        <h1 className="text-neutral-200 text-lg md:text-2xl">
+        {/* <h1 className="text-neutral-200 text-lg md:text-2xl">
           <span className="text-2xl md:text-4xl lg:text-5xl tracking-wider">
             Olá!
           </span>{" "}
@@ -60,21 +60,17 @@ export default function Home() {
           <br />
           Você também encontrará alguns projetos pessoais e profissionais meus
           por aqui.
+        </h1> */}
+        <h1 className="text-neutral-200 font-bold text-2xl">
+          Desenvolvedor frontend e marceneiro amador.
+        </h1>
+        <h1>
+          Olá, me chamo Pedro e sou um desenvolvedor frontend. Estarei
+          escrevendo alguns artigos por aqui, com intuito de repassar
+          conhecimento. Além disso, você também poderá encontrar alguns projetos
+          pessoais por aqui
         </h1>
       </div>
-
-      <div className="flex flex-col md:flex-row items-center justify-center pt-10 px-4 md:px-16 lg:px-24 md:gap-x-10">
-        <h1 className="text-neutral-200 md:text-2xl pb-4">
-          Caso precise de um desenvolvedor para tornar sua ideia realidade, pode
-          entrar em contato comigo!
-        </h1>
-        {/* <ButtonShiny /> */}
-        <Button className="w-full h-10 text-xl" variant="contact">
-          Entre em contato
-        </Button>
-      </div>
-
-      <div className="text-white">fon</div>
     </main>
   );
 }

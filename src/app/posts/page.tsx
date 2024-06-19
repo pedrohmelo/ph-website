@@ -9,7 +9,7 @@ const Posts = () => {
       </h1>
       <Link
         href="/posts/masks"
-        className="text-neutral-200 border border-[#393231] flex flex-col md:flex-row md:gap-x-4 lg:gap-x-14 gap-y-2 px-4 py-2 rounded-sm hover:bg-[#393231]"
+        className="text-neutral-200 flex flex-col md:flex-row md:gap-x-4 lg:gap-x-14 gap-y-2 px-4 py-2 rounded-sm hover:bg-[#393231]"
       >
         <div className="flex gap-x-2 items-center md:items-start">
           <div className="h-4 w-1 md:h-full bg-gray-500"></div>
