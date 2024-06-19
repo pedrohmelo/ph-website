@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${saira.className} bg-gradient-to-b from-[#0e1111] to-[#0e1111]`}
+        className={`${saira.className} bg-gradient-to-b from-[#0e1111] to-[#0e1111] `}
       >
         <Navbar />
         {children}
