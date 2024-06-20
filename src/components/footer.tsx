@@ -10,17 +10,6 @@ const Footer = () => {
           <Phone size={16} /> (44) 9 8802-6367
         </h1>
       </div>
-      <div className="flex gap-2 md:gap-x-4">
-        <Link href="https://www.instagram.com/opedromel?igsh=MXprZm5pdnJzN3V3">
-          <Instagram size={30} color="white" />
-        </Link>
-        <Link href="https://www.linkedin.com/in/pedro-melo-8841731b1/">
-          <Linkedin size={30} color="white" />
-        </Link>
-        <Link href="https://github.com/pedrohmelo">
-          <Github size={30} color="white" />
-        </Link>
-      </div>
     </main>
   );
 };
