@@ -20,32 +20,6 @@ const caveat = Caveat({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="pt-6">
-      {/* <div className="w-full flex items-center justify-center bg-[#D9D9D9]">
-        <div className="relative flex flex-col items-center p-2 w-60 md:w-96">
-          <Image
-            src={teste1}
-            alt="1fasd"
-            className="z-10 w-72 md:w-96 md:-bottom-4 absolute"
-          />
-          <div className="flex flex-col items-center relative">
-            <h1 className="text-2xl relative z-20 font-semibold md:text-3xl">
-              <span>&lt;</span>
-              desenvolvedor
-            </h1>
-            <h1
-              className={`${caveat.className} relative font-semibold text-4xl z-20 md:text-5xl `}
-            >
-              frontend/<span>&gt;</span>
-            </h1>
-          </div>
-        </div>
-        <Image
-          src={Me}
-          alt="pedromelo's face"
-          className="w-44 md:w-60 object-cover"
-        />
-      </div> */}
-
       <div className="px-4 md:px-16 lg:px-24 pt-12 md:text-start">
         <div className="flex flex-col pt-6 gap-y-2">
           <div className="flex items-center gap-x-4">

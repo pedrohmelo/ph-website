@@ -2,6 +2,10 @@ import Image from "next/image";
 import { BriefcaseBusiness } from "lucide-react";
 
 import EXEMPLO from "@/public/images/eudenovo.jpg";
+import PLIN from "@/public/images/plin.png";
+import COAMO from "@/public/images/coamo.jpg";
+import OHFY from "@/public/images/ohfy.png";
+import UEM from "@/public/images/UEM.png";
 
 const WorkTimeline = () => {
   return (
@@ -14,7 +18,7 @@ const WorkTimeline = () => {
       <div className="pt-4 flex items-start justify-between">
         <div className="flex gap-x-2">
           <Image
-            src={EXEMPLO}
+            src={PLIN}
             alt="fon"
             className="w-10 h-10 object-cover rounded-full"
           />
@@ -28,7 +32,7 @@ const WorkTimeline = () => {
       <div className="pt-4 flex items-start justify-between">
         <div className="flex gap-x-2">
           <Image
-            src={EXEMPLO}
+            src={COAMO}
             alt="fon"
             className="w-10 h-10 object-cover rounded-full"
           />
@@ -42,7 +46,7 @@ const WorkTimeline = () => {
       <div className="pt-4 flex items-start justify-between">
         <div className="flex gap-x-2">
           <Image
-            src={EXEMPLO}
+            src={OHFY}
             alt="fon"
             className="w-10 h-10 object-cover rounded-full"
           />
@@ -56,7 +60,7 @@ const WorkTimeline = () => {
       <div className="pt-4 flex items-start justify-between">
         <div className="flex gap-x-2">
           <Image
-            src={EXEMPLO}
+            src={UEM}
             alt="fon"
             className="w-10 h-10 object-cover rounded-full"
           />
