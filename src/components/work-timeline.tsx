@@ -9,7 +9,7 @@ import UEM from "@/public/images/UEM.png";
 
 const WorkTimeline = () => {
   return (
-    <main className="border border-[#737373] p-2 rounded-lg">
+    <main className="border border-[#737373] p-2 xl:p-4 rounded-lg max-w-96">
       <div className="flex gap-x-2">
         <BriefcaseBusiness color="#737373" />
         <h1 className="text-neutral-300">Trajetória Profissional</h1>

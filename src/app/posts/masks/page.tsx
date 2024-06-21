@@ -5,10 +5,10 @@ import { User } from "lucide-react";
 
 const maskPost = () => {
   return (
-    <main className="text-neutral-200 pt-20 px-4 md:px-16 lg:px-24">
+    <main className="text-neutral-400 pt-20 px-4 md:px-16 lg:px-24 2xl:px-36">
       <div>
-        <h1 className="text-5xl font-medium py-10">
-          Implementação Manual de Máscaras de Input
+        <h1 className="text-5xl font-medium py-10 text-neutral-200">
+          Implementação Manual de Máscaras com Typescript e React
         </h1>
         <h1 className="lg:text-xl pb-4">
           A aplicação de máscaras em campos de input é uma funcionalidade comum
@@ -54,9 +54,38 @@ const maskPost = () => {
 
         <div className="flex gap-x-2 items-center">
           <h1 className="font-medium lg:text-lg">
+            Input com máscara de CNPJ :
+          </h1>
+          <Input mask="cnpj" placeholder="CNPJ" />
+        </div>
+
+        <div className="flex gap-x-2 items-center">
+          <h1 className="font-medium lg:text-lg">
             Input com máscara de telefone celular :
           </h1>
           <Input mask="phone" placeholder="Telefone" />
+        </div>
+
+        <div className="flex gap-x-2 items-center">
+          <h1 className="font-medium lg:text-lg">
+            Input com máscara genérica de três caracteres :
+          </h1>
+          <Input mask="xyz" placeholder="XYZ" />
+        </div>
+        <h1 className="text-sm">
+          Após ver a implementação você pode adaptar os caracteres da forma que
+          quiser. O segredo dessa máscara genérica está na forma como você lida
+          com o evento para apagar todos os caracteres da máscara. Se não tratar
+          corretamente o tamanho da máscara, você terá resultados indesejados ao
+          tentar apagar os caracteres do input. Argumentarei melhor sobre isso
+          na devida sessão dessa máscara.
+        </h1>
+
+        <div className="flex gap-x-2 items-center">
+          <h1 className="font-medium lg:text-lg">
+            Input com máscara de porcentagem :
+          </h1>
+          <Input mask="percentage" placeholder="%" />
         </div>
       </div>
 
@@ -64,7 +93,7 @@ const maskPost = () => {
         Fluxo de desenvolvimento dos algoritmos:
       </h1>
 
-      <div className="pt-8 flex flex-col gap-y-14 ">
+      <div className="pt-8 flex flex-col gap-y-14 md:gap-y-32 ">
         <div className="flex flex-col gap-y-2">
           <h1 className="lg:text-xl">
             1 - Ajuste seu componente de Input para receber suas funções de
@@ -148,6 +177,83 @@ const maskPost = () => {
             De forma análoga ao handleChange, também utilizamos o hook
             useCallback para otimizar essa função. O propósito desta função nos
             nossos inputs é permitir que o usuário apague os caracteres.
+          </h1>
+          <h1 className="lg:text-xl">
+            3.1 - Caso queira adicionar outros handles para os exemplos de
+            máscara XYZ e porcentagem, não se esqueça de adicioná-los aqui. São
+            essas chamadas de funções que farão que nosso usuário possa apagar
+            corretamente os dados inseridos no input.
+          </h1>
+          <div className="flex justify-center">
+            <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
+              <pre>
+                <code>
+                  {`const handleKeyDown = React.useCallback(
+      (event: React.KeyboardEvent<HTMLInputElement>) => {
+        if (mask === "xyz") {
+          xyzKeyDown(event);
+        }
+        if (mask === "percentage") {
+          percentageKeyDown(event);
+        }
+        if (props.onKeyDown) {
+          props.onKeyDown(event);
+        }
+      },
+    [mask, props]
+);`}
+                </code>
+              </pre>
+            </div>
+          </div>
+          <h1 className="lg:text-xl">
+            3.2 - Caso você queira utilizar as máscaras de porcentagem ou a
+            máscara genérica XYZ, não se esqueça de adicionar as funções de
+            manipulação do input para que o usuário possa apagar os caracteres
+            de forma correta.
+          </h1>
+          <div className="flex justify-center">
+            <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
+              <pre>
+                <code>
+                  {`export const xyzKeyDown = (event: { key: string; target: any }) => {
+  if (event.key === "Backspace" || event.key === "Delete") {
+    const target = event.target;
+    const value = target.value;
+
+    const position = value.length - 4;
+
+    if (target.selectionStart === value.length) {
+      target.selectionStart = target.selectionEnd = position;
+    }
+  }
+};`}
+
+                  {`
+
+export const percentageKeyDown = (event: { key: string; target: any }) => {
+  if (event.key === "Backspace" || event.key === "Delete") {
+    const target = event.target;
+    const value = target.value;
+
+    const position = value.length - 1;
+
+    if (target.selectionStart === value.length) {
+      target.selectionStart = target.selectionEnd = position;
+    }
+  }
+};`}
+                </code>
+              </pre>
+            </div>
+          </div>
+          <h1>
+            Perceba como ambas as funções iguais, mudando apenas o valor que é
+            subtraído da constante position. Esse valor está relacionado ao
+            tamanho dos caracteres da sua máscara. Na máscara de desconto temos
+            1 caractere na nossa máscara, portanto nós retiramos uma unidade do
+            valor do input do usuário. Mantenha isso em mente quando for criar
+            funções similares.
           </h1>
         </div>
 
@@ -241,6 +347,105 @@ const maskPost = () => {
     }
 }`}
                 </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h1 className="lg:text-xl">6.1 - Função para formatação de CNPJ:</h1>
+          <h1 className="lg:text-lg">
+            Esperamos receber uma string de entrada e retorná-la no formato
+            "XX.XXX.XXX/XXXX-XX"
+          </h1>
+          <div className="flex justify-center">
+            <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
+              <pre>
+                <code>{`export function maskCNPJ(cnpj: string) {
+  const numbersOnly = cnpj.replace(/\D/g, "");
+
+  if (numbersOnly.length <= 2) {
+    return numbersOnly;
+  } else if (numbersOnly.length <= 5) {
+    return \`\${numbersOnly.slice(0, 2)}.\${numbersOnly.slice(2)}\`;
+  } else if (numbersOnly.length <= 8) {
+    return \`\${numbersOnly.slice(0, 2)}.\${numbersOnly.slice(2, 5)}.\${numbersOnly.slice(5)}\`;
+  } else if (numbersOnly.length <= 12) {
+    return \`\${numbersOnly.slice(0, 2)}.\${numbersOnly.slice(2, 5)}.\${numbersOnly.slice(5, 8)}/\${numbersOnly.slice(8)}\`;
+  } else {
+    return \`\${numbersOnly.slice(0, 2)}.\${numbersOnly.slice(2, 5)}.\${numbersOnly.slice(5, 8)}/\${numbersOnly.slice(8, 12)}-\${numbersOnly.slice(12, 14)}\`;
+  }
+}`}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h1 className="lg:text-xl">
+            6.2 - Função para formatação de porcentagem:
+          </h1>
+          <h1 className="lg:text-lg">
+            Esperamos receber um numérico de entrada e retorná-la no formato "X
+            %" a "XXX %". Lembrando que também limitamos o limite numérico a 100
+            para evitar que o usuário insira um dado acima de 100%.
+          </h1>
+          <div className="flex justify-center">
+            <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
+              <pre>
+                <code>{`export function maskPercentage(value: string) {
+  const number = Number(value);
+  return number < 100 ? \`\${number}%\` : "100%";
+}`}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h1 className="lg:text-xl">
+            6.2 - Função para formatação de telefone:
+          </h1>
+          <h1 className="lg:text-lg">
+            Esperamos receber um numérico de entrada e retorná-la no formato
+            "(XX) X XXXX-XXXX".
+          </h1>
+          <div className="flex justify-center">
+            <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
+              <pre>
+                <code>{`export function maskPhone(phone: string) {
+  const numbersOnly = phone.replace(/\D/g, "");
+
+  if (numbersOnly.length <= 2) {
+    return numbersOnly;
+  } else if (numbersOnly.length <= 7) {
+    return \`(\${numbersOnly.slice(0, 2)}) \${numbersOnly.slice(2)}\`;
+  } else if (numbersOnly.length <= 11) {
+    return \`(\${numbersOnly.slice(0, 2)}) \${numbersOnly.slice(2, 3)} \${numbersOnly.slice(3, 7)}-\${numbersOnly.slice(7)}\`;
+  } else {
+    return \`(\${numbersOnly.slice(0, 2)}) \${numbersOnly.slice(2, 3)} \${numbersOnly.slice(3, 7)}-\${numbersOnly.slice(7, 11)}\`;
+  }
+}`}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-y-2">
+          <h1 className="lg:text-xl">
+            6.2 - Função para formatação da máscara genérica XYZ:
+          </h1>
+          <h1 className="lg:text-lg">
+            Esperamos receber um numérico de entrada e retorná-la no formato "XX
+            xyz".
+          </h1>
+          <div className="flex justify-center">
+            <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
+              <pre>
+                <code>{`export function maskXYZ(value: string) {
+  const number = Number(value);
+  return \`\${number} xyz\`;
+}`}</code>
               </pre>
             </div>
           </div>

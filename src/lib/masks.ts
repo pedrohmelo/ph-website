@@ -72,8 +72,8 @@ export function maskPercentage(value: string) {
   return number < 100 ? `${number}%` : "100%";
 }
 
-export function maskKWH(value: string) {
+export function maskXYZ(value: string) {
   const number = Number(value);
 
-  return `${number} kwh`;
+  return `${number} xyz`;
 }

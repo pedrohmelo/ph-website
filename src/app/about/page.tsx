@@ -4,10 +4,11 @@ import myselfGraduated from "@/public/images/meGraduated.jpg";
 
 import { Phone, Instagram, Linkedin, Github } from "lucide-react";
 import Link from "next/link";
+import WorkTimeline from "@/src/components/work-timeline";
 
 const About = () => {
   return (
-    <main className="pt-20 px-4 md:px-16 lg:px-24">
+    <main className="pt-20 px-4 md:px-16 lg:px-24 2xl:px-36">
       <h1 className="text-neutral-200 font-semibold text-xl md:text-2xl lg:text-3xl pb-10">
         Sobre mim
       </h1>
@@ -138,6 +139,10 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="pt-10 md:pt-20 ">
+        <WorkTimeline />
       </div>
     </main>
   );
