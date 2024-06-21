@@ -326,7 +326,7 @@ export const percentageKeyDown = (event: { key: string; target: any }) => {
           </h1>
           <h1 className="lg:text-lg">
             Esperamos receber uma string de entrada e retorná-la no formato
-            "XXX.XXX.XXX-XX"
+            &quot;XXX.XXX.XXX-XX&quot;
           </h1>
           <h1>Função de formatação para CPF:</h1>
           <div className="flex justify-center">
@@ -356,7 +356,7 @@ export const percentageKeyDown = (event: { key: string; target: any }) => {
           <h1 className="lg:text-xl">6.1 - Função para formatação de CNPJ:</h1>
           <h1 className="lg:text-lg">
             Esperamos receber uma string de entrada e retorná-la no formato
-            "XX.XXX.XXX/XXXX-XX"
+            &quot;XX.XXX.XXX/XXXX-XX&quot;
           </h1>
           <div className="flex justify-center">
             <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
@@ -386,9 +386,10 @@ export const percentageKeyDown = (event: { key: string; target: any }) => {
             6.2 - Função para formatação de porcentagem:
           </h1>
           <h1 className="lg:text-lg">
-            Esperamos receber um numérico de entrada e retorná-la no formato "X
-            %" a "XXX %". Lembrando que também limitamos o limite numérico a 100
-            para evitar que o usuário insira um dado acima de 100%.
+            Esperamos receber um numérico de entrada e retorná-la no formato
+            &quot;X %&quot; a &quot;XXX %&quot;. Lembrando que também limitamos
+            o limite numérico a 100 para evitar que o usuário insira um dado
+            acima de 100%.
           </h1>
           <div className="flex justify-center">
             <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
@@ -408,7 +409,7 @@ export const percentageKeyDown = (event: { key: string; target: any }) => {
           </h1>
           <h1 className="lg:text-lg">
             Esperamos receber um numérico de entrada e retorná-la no formato
-            "(XX) X XXXX-XXXX".
+            &quot;(XX) X XXXX-XXXX&quot;.
           </h1>
           <div className="flex justify-center">
             <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
@@ -436,8 +437,8 @@ export const percentageKeyDown = (event: { key: string; target: any }) => {
             6.2 - Função para formatação da máscara genérica XYZ:
           </h1>
           <h1 className="lg:text-lg">
-            Esperamos receber um numérico de entrada e retorná-la no formato "XX
-            xyz".
+            Esperamos receber um numérico de entrada e retorná-la no formato
+            &quot;XX xyz&quot;.
           </h1>
           <div className="flex justify-center">
             <div className="overflow-auto bg-[#252424] rounded-lg px-4 py-2 lg:w-[34rem] xl:w-[44rem]">
