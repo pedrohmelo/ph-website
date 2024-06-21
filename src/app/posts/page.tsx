@@ -3,7 +3,7 @@ import { VenetianMask, ChevronRight } from "lucide-react";
 
 const Posts = () => {
   return (
-    <main className="pt-20 px-4 md:px-16 lg:px-24 2xl:px-36">
+    <main className="pt-20 h-screen px-4 md:px-16 lg:px-24 2xl:px-36">
       <h1 className="text-neutral-200 text-2xl md:text-3xl pb-6 font-medium">
         Posts
       </h1>
