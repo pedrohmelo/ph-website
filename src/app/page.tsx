@@ -1,7 +1,3 @@
-import Image from "next/image";
-import { Button } from "../components/ui/button";
-import ButtonShiny from "../components/ui/button-shiny";
-import { Caveat } from "next/font/google";
 import {
   Phone,
   Instagram,
@@ -11,6 +7,8 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import { Caveat } from "next/font/google";
 
 import Myself from "@/public/images/eudenovo.jpg";
 import WorkTimeline from "../components/work-timeline";

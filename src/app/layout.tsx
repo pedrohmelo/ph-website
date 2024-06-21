@@ -9,7 +9,7 @@ const saira = Saira({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pedro Melo",
-  description: "Descrição blablabla",
+  description: "Website pessoal com fins educativos.",
 };
 
 export default function RootLayout({
