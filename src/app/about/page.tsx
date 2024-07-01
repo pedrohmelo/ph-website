@@ -105,7 +105,12 @@ const About = () => {
             tentando sempre ser o melhor profissional possível. No momento meu
             foco está no desenvolvimento web e mobile.
           </p>
+          <h2 className="text-lg text-neutral-200 pt-10 font-medium">
+            Tecnologias que tenho prática:
+          </h2>
+          <TechsCarousel />
         </div>
+
         <div>
           <Image
             src={myselfGraduated}
@@ -141,7 +146,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="pt-10 md:pt-20 ">
+      <div className="py-10 md:pt-20 ">
         <WorkTimeline />
       </div>
     </main>
