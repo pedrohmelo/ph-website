@@ -23,7 +23,8 @@ const Posts = () => {
             </h1>
           </div>
           <h1 className="text-gray-500">
-            Fazendo máscaras para inputs sem utilizar bibliotecas externas.
+            Implementando máscaras para inputs sem utilizar bibliotecas
+            externas.
           </h1>
           <div className="flex gap-x-1 items-center">
             <h1 className="font-medium">Leia o artigo </h1>

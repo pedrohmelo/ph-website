@@ -17,7 +17,7 @@ const caveat = Caveat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="pt-6 lg:pt-20 h-screen">
+    <main className="pt-6 lg:pt-20 h-screen mb-10">
       <div className="px-4 md:px-16 lg:px-24 2xl:px-36 pt-12 md:text-start">
         <div className="flex flex-col pt-6 gap-y-2">
           <div className="flex items-center gap-x-4 md:justify-between">
@@ -27,7 +27,7 @@ export default function Home() {
             <Image
               src={Myself}
               alt="pedromelo"
-              className="w-24 h-24 rounded-full object-cover"
+              className="w-24 h-24 rounded-full lg:w-40 lg:h-40 object-cover"
             />
           </div>
           <h1 className="text-neutral-500 md:pt-4">
@@ -66,12 +66,12 @@ export default function Home() {
                   <VenetianMask size={24} />
                   <h1 className="font-medium text-lg">
                     {" "}
-                    Implementação Manual de Máscaras com Typescript
+                    Implementação Manual de Máscaras com Typescript e React
                   </h1>
                 </div>
                 <h1 className="text-gray-500">
-                  Fazendo máscaras para inputs sem utilizar bibliotecas externas
-                  -<span className="text-neutral-400"> Typescript</span>
+                  Implementando máscaras para inputs sem utilizar bibliotecas
+                  externas
                 </h1>
                 <div className="flex gap-x-1 items-center">
                   <h1 className="font-medium text-red-400">Leia o artigo </h1>
