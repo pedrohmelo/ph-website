@@ -21,26 +21,22 @@ const Footer = () => {
           </Link>
         </div>
 
-        {/* <h1 className="text-neutral-200 flex gap-x-2 items-center">
-          <Phone size={16} /> (44) 9 8802-6367
-        </h1> */}
-
         <div className="flex pt-4 gap-x-2 items-center justify-center">
           <Link href="/">
             <h1 className="text-[#696969]">Home</h1>
           </Link>
           <h1 className="text-[#696969]">|</h1>
-          <Link href="/">
+          <Link href="/about">
             <h1 className="text-[#696969]">Sobre mim</h1>
           </Link>
           <h1 className="text-[#696969]">|</h1>
 
-          <Link href="/">
+          <Link href="/posts">
             <h1 className="text-[#696969]">Posts</h1>
           </Link>
           <h1 className="text-[#696969]">|</h1>
 
-          <Link href="/">
+          <Link href="/projects">
             <h1 className="text-[#696969]">Projetos</h1>
           </Link>
         </div>
