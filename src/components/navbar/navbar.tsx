@@ -1,4 +1,4 @@
-import { HeaderItem } from "./navbar-item";
+import { NavbarItem } from "./navbar-item";
 import MobileMenu from "@/src/components/navbar/mobile-dropdown";
 
 const Navbar = () => {
@@ -17,35 +17,10 @@ const Navbar = () => {
       </div>
 
       <div className="hidden lg:flex gap-x-4 font-medium text-xl 3xl:text-2xl text-neutral-200">
-        {/* <ul className="flex ">
-          <li>
-            <a href="/" className="hover:text-gray-400 transition-colors">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/posts" className="hover:text-gray-400 transition-colors">
-              Posts
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="hover:text-gray-400 transition-colors">
-              Sobre mim
-            </a>
-          </li>
-          <li>
-            <a
-              href="/projects"
-              className="hover:text-gray-400 transition-colors"
-            >
-              Projetos
-            </a>
-          </li>
-        </ul> */}
-        <HeaderItem path="/">Home</HeaderItem>
-        <HeaderItem path="/posts">Posts</HeaderItem>
-        <HeaderItem path="/about">Sobre mim</HeaderItem>
-        <HeaderItem path="/projects">Projetos</HeaderItem>
+        <NavbarItem path="/">Home</NavbarItem>
+        <NavbarItem path="/posts">Posts</NavbarItem>
+        <NavbarItem path="/about">Sobre mim</NavbarItem>
+        <NavbarItem path="/projects">Projetos</NavbarItem>
       </div>
     </nav>
   );
