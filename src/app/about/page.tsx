@@ -8,7 +8,7 @@ import { TechsCarousel } from "@/src/components/carousel/techs-carousel";
 
 const About = () => {
   return (
-    <main className="pt-20 px-4 md:px-16 lg:px-24 2xl:px-36">
+    <main className="pt-20 px-4 md:px-16 lg:px-24 2xl:px-36 3xl:px-52">
       <h1 className="text-[#EBE4E4] font-semibold text-xl md:text-2xl lg:text-3xl pb-10">
         Sobre mim
       </h1>
