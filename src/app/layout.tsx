@@ -10,6 +10,16 @@ const saira = Saira({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Pedro Melo",
   description: "Website pessoal com fins educativos.",
+  openGraph: {
+    type: "website",
+    title: "Pedro Melo",
+    description: "Pedro Melo - Desenvolvedor Frontend",
+    images: [
+      {
+        url: "https://raw.githubusercontent.com/pedrohmelo/images-repository/main/Designer.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
