@@ -29,6 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+      </head>
       <body
         className={`${saira.className} bg-gradient-to-b from-[#0e1111] to-[#0e1111] `}
       >
