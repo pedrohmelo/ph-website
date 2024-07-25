@@ -3,7 +3,7 @@ import { Phone, Instagram, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
-    <main className="flex pt-52 pb-6 px-4 md:px-16 lg:px-24 2xl:px-36 justify-between md:text-xl">
+    <main className="flex pt-52 pb-6 px-4 md:px-16 lg:px-24 2xl:px-36 justify-center md:text-xl">
       <div className="flex flex-col">
         <h1 className="text-[#696969] text-center">
           &copy; Pedro Melo - 2024. Todos os direitos reservados.

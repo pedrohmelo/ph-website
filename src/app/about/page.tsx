@@ -57,21 +57,21 @@ const About = () => {
             <h1 className="text-lg font-medium">Minhas redes:</h1>
             <Link
               href="https://www.instagram.com/opedromel?igsh=MXprZm5pdnJzN3V3"
-              className="flex gap-x-2 items-center"
+              className="flex gap-x-2 items-center text-[#EBE4E4]"
             >
               <Instagram size={30} color="white" />
               Instagram
             </Link>
             <Link
               href="https://www.linkedin.com/in/pedro-melo-8841731b1/"
-              className="flex gap-x-2 items-center"
+              className="flex gap-x-2 items-center text-[#EBE4E4]"
             >
               <Linkedin size={30} color="white" />
               Linkedin
             </Link>
             <Link
               href="https://github.com/pedrohmelo"
-              className="flex gap-x-2 items-center"
+              className="flex gap-x-2 items-center text-[#EBE4E4]"
             >
               <Github size={30} color="white" />
               GitHub
@@ -124,21 +124,21 @@ const About = () => {
             </h1>
             <Link
               href="https://www.instagram.com/opedromel?igsh=MXprZm5pdnJzN3V3"
-              className="flex gap-x-4 items-center lg:text-xl"
+              className="flex gap-x-4 items-center text-[#EBE4E4] lg:text-xl"
             >
               <Instagram size={30} color="#EBE4E4" />
               Instagram
             </Link>
             <Link
               href="https://www.linkedin.com/in/pedro-melo-8841731b1/"
-              className="flex gap-x-4 items-center lg:text-xl"
+              className="flex gap-x-4 items-center text-[#EBE4E4] lg:text-xl"
             >
               <Linkedin size={30} color="#EBE4E4" />
               Linkedin
             </Link>
             <Link
               href="https://github.com/pedrohmelo"
-              className="flex gap-x-4 items-center lg:text-xl"
+              className="flex gap-x-4 items-center text-[#EBE4E4] lg:text-xl"
             >
               <Github size={30} color="#EBE4E4" />
               GitHub

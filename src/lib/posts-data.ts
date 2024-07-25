@@ -1,4 +1,5 @@
 import TSicon from "@/public/svgs/typescriptDark.svg";
+import ReactIcon from "@/public/svgs/icons8-react.svg";
 
 export const postsData = [
   {
@@ -11,12 +12,12 @@ export const postsData = [
     readMore: "Leia o artigo",
     icons: [
       {
-        src: { TSicon },
+        src: TSicon,
         alt: "TS icon",
         className: "w-8",
       },
       {
-        //src: "@/public/svgs/icons8-reactDark.svg",
+        src: ReactIcon,
         alt: "React icon",
         className: "w-20",
       },

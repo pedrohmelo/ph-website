@@ -39,6 +39,8 @@ const PostsCard = () => {
                 <Image
                   key={index}
                   src={icon.src}
+                  width={20}
+                  height={20}
                   alt={icon.alt}
                   //className={icon.className}
                 />
